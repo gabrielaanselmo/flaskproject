@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
     <title>Colecionáveis - Lista</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
 </head>
@@ -16,10 +17,27 @@
             <a href="/cadastro" class="button">Adicionar Item</a>
             <ul>
                 {% for item in itens %}
-                    <li>{{ item.nome }} - {{ item.descricao }} - {{ item.categoria }}</li>
+                    <li id="item-{{ item.id }}">
+                        {{ item.nome }} - {{ item.descricao }} - {{ item.categoria }}
+                        <button onclick="mostrarFormularioDeAtualizacao({{ item.id }})">Atualizar</button>
+                        <button onclick="deletarItem({{ item.id }})">Deletar</button>
+                    </li>
+                    <div id="formulario-atualizacao-{{ item.id }}" style="display:none;">
+                        <h3>Atualizar Item</h3>
+                        <form onsubmit="atualizarItem(event, {{ item.id }})">
+                            <label for="atualizar-nome">Nome:</label>
+                            <input type="text" id="atualizar-nome" required value="{{ item.nome }}"><br>
+                            <label for="atualizar-descricao">Descrição:</label>
+                            <input type="text" id="atualizar-descricao" required value="{{ item.descricao }}"><br>
+                            <label for="atualizar-categoria">Categoria:</label>
+                            <input type="text" id="atualizar-categoria" required value="{{ item.categoria }}"><br>
+                            <button type="submit">Atualizar</button>
+                        </form>
+                    </div>
                 {% endfor %}
             </ul>
         </div>
     </section>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 </html>
