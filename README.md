@@ -20,15 +20,13 @@ cd flaskproject
 
 ### 👉🏼 Executando a aplicação:
 ```
-# Comandos para executar a aplicação
+# Navegue até a subpasta do projeto e ative o ambiente virtual:
 cd colecionaveis
 \venv\Scripts\activate
+# Agora, inicie o servidor Flask:
 python app.py
 ```
-Uma vez que o servidor esteja rodando, você deverá ver uma saída indicando que o servidor está em execução. Algo assim:
-```
-* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-```
+Após executar os comandos acima, a aplicação deverá estar rodando no endereço http://127.0.0.1:5000/ (ou outra porta, caso você tenha configurado diferente). Basta abrir este endereço em seu navegador.
 
 ## 📦 Banco de Dados
 Não existe um banco de dados no projeto, uma vez que se trata de um projeto simples, criado apenas para fins de estudo. Foi realizada uma simulação de um "banco de dados" utilizando uma lista.
