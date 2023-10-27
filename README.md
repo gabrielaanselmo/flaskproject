@@ -29,6 +29,6 @@ python app.py
 Após executar os comandos acima, a aplicação deverá estar rodando no endereço http://127.0.0.1:5000/ (ou outra porta, caso você tenha configurado diferente). Basta abrir este endereço em seu navegador.
 
 ## 📦 Banco de Dados
-Não existe um banco de dados no projeto, uma vez que se trata de um projeto simples, criado apenas para fins de estudo. Foi realizada uma simulação de um "banco de dados" utilizando uma lista.
+Atualmente, não utilizamos um sistema de banco de dados tradicional. O projeto é uma demonstração simples, criada para fins educativos, e simula um banco de dados através de uma lista em memória.
 ![image](https://github.com/gabrielaanselmo/flaskproject/assets/112910372/d74f20ea-6256-4539-a4d8-019796eab8b0)
 
