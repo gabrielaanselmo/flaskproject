@@ -22,7 +22,7 @@ cd flaskproject
 ```
 # Navegue até a subpasta do projeto e ative o ambiente virtual:
 cd colecionaveis
-\venv\Scripts\activate
+.\venv\Scripts\activate
 # Agora, inicie o servidor Flask:
 python app.py
 ```
