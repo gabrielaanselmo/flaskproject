@@ -114,12 +114,17 @@ form {
     max-width: 500px;
     display: flex;
     flex-direction: column;
+    border: 1px solid #e0e0e0;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    gap: 20px;
 }
 
 label {
     font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 5px;
+    color: #555;
 }
 
 input[type="text"],
@@ -130,12 +135,13 @@ textarea {
     border-radius: 4px;
     font-size: 1em;
     outline: none;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 input[type="text"]:focus,
 textarea:focus {
     border-color: #50a3a2;
+    box-shadow: 0 0 4px rgba(80, 163, 162, 0.5);
 }
 
 textarea {
@@ -144,8 +150,8 @@ textarea {
 }
 
 button {
-    margin-top: 20px;
-    padding: 10px 20px;
+    align-self: center;
+    padding: 10px 25px;
     background-color: #50a3a2;
     color: #fff;
     border: none;
